@@ -7,19 +7,40 @@ public class SandBox {
 
         String userString = "";
 
-        System.out.println("Enter a string (max number of characters is 132");
-        userString = input.nextLine();
+//        4. EVEN AND ODD VALUES IN ARRAY
+        System.out.println("Even and Odd values in array");
 
-        //Print out original string
-        System.out.println("You entered " + userString);
+        int[] evenOrOddArray = new int[10];
 
-        //split string into an array
-        String [] userWords = userString.split(" ");
-        System.out.println(Arrays.toString(userWords));
+        int userNum = 0;
+        System.out.println("Enter 10 numbers");
 
-        for (int i = 0; i < userWords.length; i++){
-            System.out.println(userWords[i] + " has " + userWords[i].length() + " characters." );
+
+        //adding numbers to the array
+        for (int i = 0; i <10; i++) {
+            System.out.printf("Number %d:\n", i+1);
+            userNum = input.nextInt();
+            evenOrOddArray[i] = userNum;
         }
+
+        //Printing even numbers
+        int evenCount = 0;
+        System.out.println("Even numbers:");
+        for (int i: evenOrOddArray){
+            if (i % 2 ==0)
+                System.out.print(i+ " ");
+        }
+        System.out.println();//linebreak
+
+
+        // Printing odd numbers
+        int oddCount = 0;
+        System.out.println("Odd numbers: ");
+        for (int i: evenOrOddArray){
+            if (i % 2 !=0)
+                System.out.print(i+ " ");
+        }
+        System.out.println();//linebreak
 
 
 

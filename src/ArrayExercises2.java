@@ -89,7 +89,7 @@ public class ArrayExercises2 {
         //Printing even numbers
         int evenCount = 0;
         System.out.println("Even numbers:");
-        for (int i: numList){
+        for (int i: evenOrOddArray){
             if (i % 2 ==0)
                 System.out.print(i+ " ");
         }
@@ -99,7 +99,7 @@ public class ArrayExercises2 {
         // Printing odd numbers
         int oddCount = 0;
         System.out.println("Odd numbers: ");
-        for (int i: numList){
+        for (int i: evenOrOddArray){
             if (i % 2 !=0)
                 System.out.print(i+ " ");
         }
